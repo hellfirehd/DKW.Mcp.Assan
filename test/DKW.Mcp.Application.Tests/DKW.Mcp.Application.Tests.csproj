@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<RootNamespace>DKW.Mcp</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\DKW.Mcp.Application\DKW.Mcp.Application.csproj" />
+		<ProjectReference Include="..\DKW.Mcp.Domain.Tests\DKW.Mcp.Domain.Tests.csproj" />
+	</ItemGroup>
+
+</Project>

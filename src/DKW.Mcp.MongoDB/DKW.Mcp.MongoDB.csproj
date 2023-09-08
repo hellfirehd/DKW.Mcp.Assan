@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DKW.Mcp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.MongoDB\Volo.Abp.MongoDB.csproj" />
+    <ProjectReference Include="..\DKW.Mcp.Domain\DKW.Mcp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

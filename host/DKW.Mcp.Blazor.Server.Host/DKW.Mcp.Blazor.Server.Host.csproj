@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
+        <PreserveCompilationReferences>true</PreserveCompilationReferences>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Blazorise.Bootstrap5" Version="1.2.3" />
+        <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.2.3" />
+        <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+        <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.EntityFrameworkCore.SqlServer\Volo.Abp.EntityFrameworkCore.SqlServer.csproj" />
+        <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Autofac\Volo.Abp.Autofac.csproj" />
+        <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Swashbuckle\Volo.Abp.Swashbuckle.csproj" />
+        <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AspNetCore.Serilog\Volo.Abp.AspNetCore.Serilog.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\audit-logging\src\Volo.Abp.AuditLogging.EntityFrameworkCore\Volo.Abp.AuditLogging.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\account\src\Volo.Abp.Account.Web.OpenIddict\Volo.Abp.Account.Web.OpenIddict.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\account\src\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\feature-management\src\Volo.Abp.FeatureManagement.EntityFrameworkCore\Volo.Abp.FeatureManagement.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\feature-management\src\Volo.Abp.FeatureManagement.Application\Volo.Abp.FeatureManagement.Application.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.Identity.Blazor.Server\Volo.Abp.Identity.Blazor.Server.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.Identity.EntityFrameworkCore\Volo.Abp.Identity.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.Identity.Application\Volo.Abp.Identity.Application.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\tenant-management\src\Volo.Abp.TenantManagement.Blazor.Server\Volo.Abp.TenantManagement.Blazor.Server.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\tenant-management\src\Volo.Abp.TenantManagement.EntityFrameworkCore\Volo.Abp.TenantManagement.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\tenant-management\src\Volo.Abp.TenantManagement.Application\Volo.Abp.TenantManagement.Application.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\setting-management\src\Volo.Abp.SettingManagement.Blazor.Server\Volo.Abp.SettingManagement.Blazor.Server.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\setting-management\src\Volo.Abp.SettingManagement.EntityFrameworkCore\Volo.Abp.SettingManagement.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\setting-management\src\Volo.Abp.SettingManagement.Application\Volo.Abp.SettingManagement.Application.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\permission-management\src\Volo.Abp.PermissionManagement.Application\Volo.Abp.PermissionManagement.Application.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\permission-management\src\Volo.Abp.PermissionManagement.EntityFrameworkCore\Volo.Abp.PermissionManagement.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="C:\source\abp\modules\\identity\src\Volo.Abp.PermissionManagement.Domain.Identity\Volo.Abp.PermissionManagement.Domain.Identity.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\packages\DKW.Abp.AspNetCore.Mvc.UI.Theme.Assan\DKW.Abp.AspNetCore.Mvc.UI.Theme.Assan.csproj" />
+		<ProjectReference Include="..\..\src\DKW.Mcp.Application\DKW.Mcp.Application.csproj" />
+		<ProjectReference Include="..\..\src\DKW.Mcp.Blazor.Server\DKW.Mcp.Blazor.Server.csproj" />
+        <ProjectReference Include="..\..\src\DKW.Mcp.EntityFrameworkCore\DKW.Mcp.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\..\src\DKW.Mcp.HttpApi\DKW.Mcp.HttpApi.csproj" />
+        <ProjectReference Include="..\DKW.Mcp.Host.Shared\DKW.Mcp.Host.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Pages\**\*.js">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Pages\**\*.css">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>

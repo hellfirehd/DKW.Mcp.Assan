@@ -1,0 +1,12 @@
+{
+	"profiles": {
+		"DKW.Mcp.Web.Host": {
+			"commandName": "Project",
+			"launchBrowser": true,
+			"applicationUrl": "https://localhost:44308",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		}
+	}
+}

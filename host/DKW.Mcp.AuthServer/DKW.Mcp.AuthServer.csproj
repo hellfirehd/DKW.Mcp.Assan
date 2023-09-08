@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DKW.Mcp</RootNamespace>
+    <PreserveCompilationReferences>true</PreserveCompilationReferences>
+    <UserSecretsId>DKW.Mcp-c2d31439-b723-48e2-b061-5ebd7aeb6010</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <ProjectReference Include="..\..\packages\DKW.Abp.AspNetCore.Mvc.UI.Theme.Assan\DKW.Abp.AspNetCore.Mvc.UI.Theme.Assan.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AspNetCore.Mvc\Volo.Abp.AspNetCore.Mvc.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy\Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Autofac\Volo.Abp.Autofac.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Caching.StackExchangeRedis\Volo.Abp.Caching.StackExchangeRedis.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.EntityFrameworkCore.SqlServer\Volo.Abp.EntityFrameworkCore.SqlServer.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AspNetCore.Serilog\Volo.Abp.AspNetCore.Serilog.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Swashbuckle\Volo.Abp.Swashbuckle.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\account\src\Volo.Abp.Account.Web.OpenIddict\Volo.Abp.Account.Web.OpenIddict.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\account\src\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\account\src\Volo.Abp.Account.HttpApi\Volo.Abp.Account.HttpApi.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\setting-management\src\Volo.Abp.SettingManagement.EntityFrameworkCore\Volo.Abp.SettingManagement.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\setting-management\src\Volo.Abp.SettingManagement.Application\Volo.Abp.SettingManagement.Application.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\setting-management\src\Volo.Abp.SettingManagement.HttpApi\Volo.Abp.SettingManagement.HttpApi.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\audit-logging\src\Volo.Abp.AuditLogging.EntityFrameworkCore\Volo.Abp.AuditLogging.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\openiddict\src\Volo.Abp.OpenIddict.EntityFrameworkCore\Volo.Abp.OpenIddict.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\permission-management\src\Volo.Abp.PermissionManagement.EntityFrameworkCore\Volo.Abp.PermissionManagement.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\permission-management\src\Volo.Abp.PermissionManagement.Application\Volo.Abp.PermissionManagement.Application.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\permission-management\src\Volo.Abp.PermissionManagement.HttpApi\Volo.Abp.PermissionManagement.HttpApi.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.Identity.EntityFrameworkCore\Volo.Abp.Identity.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.Identity.Application\Volo.Abp.Identity.Application.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.Identity.HttpApi\Volo.Abp.Identity.HttpApi.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.PermissionManagement.Domain.Identity\Volo.Abp.PermissionManagement.Domain.Identity.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\feature-management\src\Volo.Abp.FeatureManagement.EntityFrameworkCore\Volo.Abp.FeatureManagement.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\feature-management\src\Volo.Abp.FeatureManagement.Application\Volo.Abp.FeatureManagement.Application.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\feature-management\src\Volo.Abp.FeatureManagement.HttpApi\Volo.Abp.FeatureManagement.HttpApi.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\tenant-management\src\Volo.Abp.TenantManagement.EntityFrameworkCore\Volo.Abp.TenantManagement.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\tenant-management\src\Volo.Abp.TenantManagement.Application\Volo.Abp.TenantManagement.Application.csproj" />
+    <ProjectReference Include="C:\source\abp\modules\tenant-management\src\Volo.Abp.TenantManagement.HttpApi\Volo.Abp.TenantManagement.HttpApi.csproj" />
+    <ProjectReference Include="..\..\src\DKW.Mcp.Application.Contracts\DKW.Mcp.Application.Contracts.csproj" />
+    <ProjectReference Include="..\DKW.Mcp.Host.Shared\DKW.Mcp.Host.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Pages\**\*.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Pages\**\*.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

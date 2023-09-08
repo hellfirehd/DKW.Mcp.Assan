@@ -1,0 +1,13 @@
+{
+	"profiles": {
+		"DKW.Mcp.Blazor.Server.Host": {
+			"commandName": "Project",
+			"dotnetRunMessages": true,
+			"launchBrowser": true,
+			"applicationUrl": "https://localhost:44347/",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"profiles": {
+		"DKW.Mcp.AuthServer": {
+			"commandName": "Project",
+			"launchBrowser": true,
+			"applicationUrl": "https://localhost:44374",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		}
+	}
+}

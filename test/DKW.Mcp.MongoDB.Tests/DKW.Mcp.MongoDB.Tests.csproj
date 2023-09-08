@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<RootNamespace>DKW.Mcp</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EphemeralMongo.Core" Version="1.1.0" />
+		<PackageReference Include="EphemeralMongo6.runtime.linux-x64" Version="1.1.0" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
+		<PackageReference Include="EphemeralMongo6.runtime.osx-x64" Version="1.1.0" Condition="$([MSBuild]::IsOSPlatform('OSX'))" />
+		<PackageReference Include="EphemeralMongo6.runtime.win-x64" Version="1.1.0" Condition="$([MSBuild]::IsOSPlatform('Windows'))" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\DKW.Mcp.MongoDB\DKW.Mcp.MongoDB.csproj" />
+		<ProjectReference Include="..\DKW.Mcp.TestBase\DKW.Mcp.TestBase.csproj" />
+	</ItemGroup>
+
+</Project>

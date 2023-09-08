@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DKW.Mcp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.0" />
+    <ProjectReference Include="..\..\src\DKW.Mcp.EntityFrameworkCore\DKW.Mcp.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\DKW.Mcp.TestBase\DKW.Mcp.TestBase.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.EntityFrameworkCore.Sqlite\Volo.Abp.EntityFrameworkCore.Sqlite.csproj" />
+  </ItemGroup>
+
+</Project>

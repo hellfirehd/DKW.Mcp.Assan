@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DKW.Mcp.Web</RootNamespace>
+    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\packages\DKW.Abp.AspNetCore.Mvc.UI.Theme.Assan\DKW.Abp.AspNetCore.Mvc.UI.Theme.Assan.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared\Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DKW.Mcp.Application.Contracts\DKW.Mcp.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\**\*.css" />
+    <EmbeddedResource Include="Pages\**\*.js" />
+    <EmbeddedResource Include="Components\**\*.js" />
+    <EmbeddedResource Include="Components\**\*.css" />
+    <EmbeddedResource Include="wwwroot\**\*.*" />
+    <Content Remove="Pages\**\*.css" />
+    <Content Remove="Pages\**\*.js" />
+    <Content Remove="Components\**\*.js" />
+    <Content Remove="Components\**\*.css" />
+    <Content Remove="wwwroot\**\*.*" />
+  </ItemGroup>
+
+</Project>

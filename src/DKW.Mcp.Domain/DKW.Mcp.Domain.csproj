@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DKW.Mcp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Ddd.Domain\Volo.Abp.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\DKW.Mcp.Domain.Shared\DKW.Mcp.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

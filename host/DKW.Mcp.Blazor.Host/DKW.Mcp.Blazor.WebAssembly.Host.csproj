@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Blazorise.Bootstrap5" Version="1.2.3" />
+		<PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.2.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Autofac.WebAssembly\Volo.Abp.Autofac.WebAssembly.csproj" />
+		<ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Autofac\Volo.Abp.Autofac.csproj" />
+		<ProjectReference Include="C:\source\abp\modules\account\src\Volo.Abp.Account.Application.Contracts\Volo.Abp.Account.Application.Contracts.csproj" />
+		<ProjectReference Include="C:\source\abp\modules\identity\src\Volo.Abp.Identity.Blazor.WebAssembly\Volo.Abp.Identity.Blazor.WebAssembly.csproj" />
+		<ProjectReference Include="C:\source\abp\modules\setting-management\src\Volo.Abp.SettingManagement.Blazor.WebAssembly\Volo.Abp.SettingManagement.Blazor.WebAssembly.csproj" />
+		<ProjectReference Include="C:\source\abp\modules\tenant-management\src\Volo.Abp.TenantManagement.Blazor.WebAssembly\Volo.Abp.TenantManagement.Blazor.WebAssembly.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DKW.Mcp.Host.Shared\DKW.Mcp.Host.Shared.csproj" />
+		<ProjectReference Include="..\..\packages\DKW.Abp.AspNetCore.Components.Web.Assan\DKW.Abp.AspNetCore.Components.Web.Assan.csproj" />
+		<ProjectReference Include="..\..\packages\DKW.Abp.AspNetCore.Components.WebAssembly.Assan\DKW.Abp.AspNetCore.Components.WebAssembly.Assan.csproj" />
+		<ProjectReference Include="..\..\src\DKW.Mcp.Blazor.WebAssembly\DKW.Mcp.Blazor.WebAssembly.csproj" />
+	</ItemGroup>
+
+</Project>

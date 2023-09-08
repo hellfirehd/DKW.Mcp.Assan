@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AspNetCore.Components.Server.Theming\Volo.Abp.AspNetCore.Components.Server.Theming.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\DKW.Mcp.Blazor\DKW.Mcp.Blazor.csproj" />
+    </ItemGroup>
+
+</Project>

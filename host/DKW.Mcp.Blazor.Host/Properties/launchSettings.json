@@ -1,0 +1,13 @@
+{
+	"profiles": {
+		"DKW.Mcp.Blazor.WebAssembly.Host": {
+			"commandName": "Project",
+			"launchBrowser": true,
+			"inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
+			"applicationUrl": "https://localhost:44389",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DKW.Mcp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.AutoMapper\Volo.Abp.AutoMapper.csproj" />
+    <ProjectReference Include="C:\source\abp\framework\src\Volo.Abp.Ddd.Application\Volo.Abp.Ddd.Application.csproj" />
+    <ProjectReference Include="..\DKW.Mcp.Application.Contracts\DKW.Mcp.Application.Contracts.csproj" />
+    <ProjectReference Include="..\DKW.Mcp.Domain\DKW.Mcp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
